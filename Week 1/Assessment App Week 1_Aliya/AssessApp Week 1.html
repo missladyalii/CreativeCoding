@@ -3,29 +3,92 @@
 	<head>
 		<title>Context Checker Quiz</title>
 		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Gayathri|Montserrat|Playfair+Display|Quicksand|Raleway|Roboto+Slab&display=swap');
+			p{
+				line-height: 1.8em;
+				font-family: 'Quicksand', sans-serif;
+				font-size: 1.125em;
+			}
 			div{
 				padding: 20px;
+				line-height: 1.8em;
+				font-family: 'Quicksand', sans-serif;
+				font-size: 1.125em;
 			}
 			#header{
 				background-color: lightblue
 			}
-			#question{
-				background-color: grey
+			.question{
+				word-wrap: break-word;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-right: 5px;
+				background-color: lightgrey;
+				display: inline-block;
+				border-radius: 10px;
+				box-shadow:6px 7px 3px rgba(0,0,0,0.50);
+				
 			}
+			.exerpt{
+				font-style: italic;
+			}
+			.correct{
+				background-color:green;
+			}
+			.incorrect{
+				background-color:red;
+			}
+
+
 
 		</style>
 	</head>
 	<body>
 		<p>
 			<div id="header">
-				<h2>HTML</h2>
+				<h2>Context Checker Quiz</h2>
 			</div>
-			<div id="question">
+			<div class="question">
+				<p>
 				<h3>Question 1</h3>
-				<h4>What does "billy" mean in this sentence:</h4>
-				<h5>
+				<hr>
+				<h4>What does "penned" mean in this sentence:</h4>
+					<h5><em>She penned a letter to her aunt</em></h5>
+				<ol type="B">
+					<li>baked</li>
+					<li class="correct">wrote</li>
+					<li>drew</li>
+					<li>danced</li>
+				The answer is B
 			</div>
-			
+
+			<div class="question">
+				<p>
+				<h3>Question 2</h3>
+				<hr>
+				<h4>What does "foe" mean in this sentence:</h4>
+					<h5><em>She turned the biggest foe into her best friend</em></h5>
+				<ol type="A">
+					<li class="correct">enemy</li>
+					<li>wrote</li>
+					<li>shoes</li>
+					<li>lesson</li>
+				The answer is A
+		
+			</div>
+			<div class="question">
+				<p>
+				<h3>Question 3</h3>
+				<hr>
+				<h4>What does "continent" mean in this sentence:</h4>
+					<h5><em>Asia is the largest continent, and Australia is the smalles</em></h5>
+				<ol type="D">
+					<li>ocean</li>
+					<li>kitchen</li>
+					<li>beach</li>
+					<li class="correct">land area</li>
+			</div>
+
 		</p>
 	</body>
 </html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		header{
+			background-color: coral;
+			width: 1036px;
+		}
+		
+		#logo{
+			float:left;
+			line-height: 50px;
+		}
+		ul{
+			list-style-type: none;
+			margin:0;
+			padding: 0;
+		}
+		button{
+			float: right;
+			background-color: #9999ff;
+			position: absolute;
+    		right: 10px;
+    		width: 204px;
+		}
+		.login{
+			position:relative;
+			width:180px;
+			display: inline;
+			margin-bottom: 5px;
+		}
+		#banner{
+			background-color: yellow;
+			height: 150px;
+			width: 1136px;
+			margin: auto;
+		}
+		nav{
+			float: left;
+			background-color: gray;
+			width: 100%;
+			position: absolute;
+			
+		}
+		li{
+			font-size:.85em;
+			display: inline-block;
+			list-style-position: initial;
+			padding: 14px 16px;
+			text-align: center;
+			color: white;
+			border-right: 1px solid #bbb
+		}
+		li:last-child {
+ 			 border-right: none;
+		}
+		#profile
+		#coin
+		#store
+		#forum
+		#GameWorld
+		#play
+		#casino
+		
+		footer{
+			background-color: lightblue;
+			font-style: sans-serif;
+			font-size: .75em;
+			height: 400px;
+			width:1136px;
+			margin-top:10px;
+			clear: both;
+		}
+		aside{
+			;
+			float: left;
+			width: 30%;
+			height:200px;
+			position: relative;
+			top: 700px;
+			right:350px;
+			display: block;
+			margin:auto;
+		}
+		section{
+			position: relative;
+			top: 210px;
+			float: left;
+			width:30%;
+			height: 400px;
+			margin: auto;
+		}
+		article{
+			background-color:  #99ffcc;
+			width: 70%;
+			height: 600px;
+			float:right;
+			position: relative;
+			top: 10px;
+			margin-left: auto;
+			
+		}
+		#ad{
+			background-color: black;
+			height:70px;
+			color: white;
+			width: 900px;
+			padding: auto;
+			margin: auto 75px auto;
+			position:absolute;
+			top: 80px;
+		}
+		#announcement{
+			background-color: blue;
+			display: inline-block;
+			color: white;
+			float: left;
+		}
+		#popular{
+			background-color: pink;
+			display: inline-block;
+			float: left;
+		}
+		#feature{
+			display: inline-block;
+			background-color:#7070db;
+
+		}
+		#app{
+			background-color:  #cc0099;
+			
+		}
+		.clearfix::after {
+  			clear: both;
+  			display: table-row;
+		}
+		.hot-announce{
+			box-sizing: border-box;
+			width: 25%;
+			height:200px;
+			position: relative;
+			top:200px;
+			left:90px;
+			margin: auto 75px auto;
+			padding: 50px;
+		}
+		main{
+			background-color: grey;
+			width: 1136px;
+			padding: 10px 0px;
+			padding-top: 10px;
+			padding-right: 0px;
+			padding-bottom: 10px;
+			padding-left: 0px
+			margin-top: 0px;
+			margin-right: auto;
+			margin-bottom: 0px;
+			margin-left: auto;
+			position: relative;
+			z-index: 2;
+			
+		}
+	</style>
+</head>
+<body>
+	<header id="banner">
+		<div id="logo">GaiaOnline</div>
+		<div>
+			<button class="login">Sign up</button>
+			<button class="login">Login</button>
+		</div>
+		
+	</header>
+	
+	<main >
+		<nav>
+			<ul>
+				<li id="profile">My Gaia</li>
+				<li id="coin"> GCash</li>
+				<li id="store">Shops </li>	
+				<li id="forum">Forums</li>
+				<li id="GameWorld">World</li>	
+				<li id="play">Games</li>	
+				<li id="casino">Catch</li>
+			</ul>
+		</nav>	
+		<div id="ad">
+			Ad space
+		</div>
+		<div id="popular" class="hot-announce">What's Hot</div>
+			<div id="announcement" class="hot-announce">Announcements</div>  
+		<section id="feature">
+			Featured
+		</section>
+		
+		<aside id="app">
+			Mobile app
+		</aside>
+		<article>Bulletin Boards</article>
+	</main>
+	<footer>
+		Footer
+	</footer>
+</body>
+</html>
