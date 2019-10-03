@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JCPenney</title>
+	<style type="text/css">
+		body{
+			max-width:1680px;
+
+		}
+		header{
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: row;
+			width: 100%;
+			background-color: red;
+			align-items: baseline;
+			align-content: stretch;
+
+		}
+		.topbar{
+			justify-content: center;
+		}
+		#logo{
+			font-size:1.2em;
+			justify-content: flex-start;
+			align-items: center;
+			order: 1;
+			background-color: red;
+			margin:10px;
+		}
+		#search{
+			height:30px;
+			width:60%;
+			background-color: white;
+			border-radius: 2px;
+			border-color: black;
+			border-width: 2px;
+			padding: 16px;
+			font-style: italic;
+			justify-content: center;
+			order:2;
+			margin: 5px;
+			align-items: center;
+		}
+		#sign-order{
+			align-self:flex-end;
+			font-family: sans-serif;
+			font-size: 1em;
+			order:3;
+			background-color: red;
+			word-wrap: break-word;
+			margin: 5px;
+			align-items: center;
+		}
+
+		.topnav{
+			justify-content: flex-start;
+			display: flex;
+			list-style-position: initial;
+			padding: 14px 16px;
+			text-align: center;
+			color: white;
+			border-right: 1px solid #bbb
+			background-color: grey;
+		}
+		ul {
+ 			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+ 	 		
+		}
+		li {
+  			float: left;
+  			margin: 10px;
+  			order:4;
+		}
+
+		.findstore{
+			display: inline-flex;
+			float: right;
+			order: 5;
+		}
+		#coupon{
+			display: flex;
+			width:100%;
+			background-color:gold; 
+			justify-content: center;
+			
+			align-self: center;
+		}
+		.couponmenu{
+			background-color: white;
+		}
+
+		.adsmall{
+			width:50%;
+			height:500px;
+			justify-content: flex-start;
+			background-color: #ff6666;
+			border-radius: 6px;
+			display: inline-flex;
+			margin: 10px;
+			flex-wrap: wrap;
+		}
+
+		.smallcontentrow1{
+			width:50%;
+			height:230px;
+			border-radius: 3px;
+			display: inline-flex;
+			flex-wrap: wrap;
+			background-color:#4a6970;
+			margin: 8px; 
+			
+			justify-content: flex-end;
+			flex-direction: row;
+
+		}
+		.smallcontentrow2{
+			width:50%;
+			height:230px;
+			border-radius: 3px;
+			display: inline-flex;
+			flex-wrap: wrap;
+			background-color:#4a6970;
+			margin: 8px; 
+			
+			justify-content: flex-end;
+			flex-direction: row;
+
+		}
+		#adwide{
+			width:100%;
+			background-color: blue;
+			height: 150px;
+			flex-direction:row;
+			display: inline-flex;
+
+		}
+		#widecontent{
+			background-color: lightblue;
+			width: 50%;
+			height: 90%
+			justify-content: flex-end;
+		}
+		#widecontentimg{
+			width: 50%;
+			height: 100%;
+			background-color: #cceeff;
+			justify-content: flex-start;
+		}
+		.recommend{
+			display: flex;
+			background-color: green;
+			height: 250px;
+			width:150px;
+			margin:10px;
+			justify-content: center;
+			align-content: center;
+		}
+		
+		#supportbar{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: brown;
+			color: white;
+		}
+		.footer{
+			
+  			left: 0;
+  			bottom: 0;
+  			width: 100%;
+  			background-color: red;
+  			color: white;
+  			text-align: center;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<header id="topbar">
+		<div id="logo">JCPENNEY</div>
+		<div id="search">Search</div>
+		<div id="sign-order">JCP Rewards</div>
+		<div id="sign-order">Sign In</div>
+		<div id="sign-order">Orders/Cart</div>
+
+	</header>
+	<nav id="topnav">
+		<ul>
+  			<li>SHOP DEPTS</li>
+  			<li>Pickup</li>
+  			<li>Weekly Ad</li>
+  			<li>Halloween</li>
+  			<li>Deal</li>
+  			<li>Clearance</li>
+  			<li class="findstore"> Find Store</li>
+		</ul>	
+	</nav>
+	<section>
+		<div id="coupon">In Store and Online| Ends Date|Code: 888888 <br> Sale Details</br> <br> Categories </div>
+			<nav id="coupon" class="couponmenu">
+				<ul>
+  					<li>Men</li>
+  					<li>Women</li>
+  					<li>Kids</li>
+  					<li>Shoes</li>
+  					<li>Accessories</li>
+  					<li>Jewelry</li>
+  					<li>Home</li>
+				</ul>
+			</nav>
+	</section>
+	<section style="flex-direction: row;">
+		<div class="adsmall">
+			Half page ad
+
+			
+		</div>
+		<ul class="adsmall">
+			<li class="smallcontentrow1">cat1</li>
+			<li class="smallcontentrow1">cat2</li>
+			<li class="smallcontentrow2">cat3</li>
+			<li class="smallcontentrow2">cat4</li>
+		</ul>
+	</section>
+	<section id="adwide">
+		<div id="widecontentimg">banner product img</div>
+		<div id="widecontent">banner product 
+			<button>
+				Shop
+			</button>
+		</div>
+	</section>
+	<section >
+		<ul >
+  			<li class="recommend">shirt</li>
+  			<li class="recommend">sweater</li>
+  			<li class="recommend">towel</li>
+  			<li class="recommend">dress</li>
+  			<li class="recommend">pants</li>
+  			<li class="recommend">perfume</li>
+  			<li class="recommend">jeans</li>
+  		</ul>
+	</section>
+	<section id="supportbar">
+		<ul>
+  			<li>Call</li>
+  			<li>Email</li>
+  			<li>Customer Service</li>
+  			<li>Twitter</li>
+  		</ul>
+	</section>
+			
+	<div class="footer">
+		Footer
+	</div>
+	
+</body>
+</html>
