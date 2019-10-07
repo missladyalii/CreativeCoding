@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Gayathri|Montserrat|Playfair+Display|Quicksand|Raleway|Roboto+Slab&display=swap');
+		input, select{
+			width: 33%;
+			padding:12px 20px;
+			margin: 8px 0;
+			display: flex;
+			justify-content: center;
+			align-content: center; 
+			border: 1px solid #ccc;
+  			box-sizing: border-box;
+  			font-family: 'Quicksand', sans-serif;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Registration</h1>
+	<h2> Name</h2>
+	<!-- name text-->
+	<input type="text" placeholder="first name" name="fname"><span></span>
+	<input type="text" placeholder="last name" name="surname"><br>
+	<br><h2>Email Address</h2>
+	<!-- email text -->
+	<input type="text" placeholder="email address" name="email"><br>
+	<br><h2>Age</h2>
+	<!-- age number field-->
+	<input type="number" placeholder="00" name="age"><br>
+	<br><h2>User Type</h2>
+	<h3>Student or Instructor?</h3>
+	<!-- student or instructor dropdown-->
+	<select name="utype">
+		<option value="Student">Student</option>
+		<option value="Instructor">Instructor</option>
+		<option value="other">Other</option>
+	</select><br>
+	<br><h2>Password</h2>
+	<!-- password password field-->
+	<input type="password" placeholder="Enter Password" name="psw"><br>
+	<h3>Confirm Password</h3>
+	<!-- confirm password password field-->
+	<input type="password" placeholder="Confirm Password" name="pswc"><br>
+	<h2>Practice Reminder</h2>
+	<!-- practice reminder checkbox -->
+	<input type="checkbox" id="chboxA" name="chBoxGroup" value="email" checked=""> <label for="chboxA">Email</label><br>
+	<input type="checkbox" id="chboxB" name="chBoxGroup" value="textmsg"> <label for="chboxB">Text Message</label><br>
+	
+</body>
+</html>

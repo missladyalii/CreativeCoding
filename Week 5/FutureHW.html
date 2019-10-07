@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	I will be <span id="returnHere"></span> in <span id="returnAgain"></span>.
+	
+		<script type="text/javascript">
+			//add dates into variables
+			let birthyear= 1996;
+			let futureyear=2099;
+
+			//do some math and store in a variable
+			let futureage= futureyear - birthyear;
+
+			//locate the div with the id of returnHere and store in a variable
+			let futureprint=document.querySelector("#returnHere");
+			let futureprint2=document.querySelector("#returnAgain");
+
+			//concatinate the string with the new variables inside the HTML div that you just created a variable for.
+			futureprint.innerHTML=futureage;
+			futureprint2.innerHTML=futureyear;
+		</script>
+		
+</body>
+</html>
