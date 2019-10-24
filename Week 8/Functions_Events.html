@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="nameInput" placeholder="add name">
+	<input type="text" id="colorInput" placeholder="add color">
+	<button id=createButton> Create New </button>
+
+	<ul id="colorList"> </ul>
+
+	<script type="text/javascript">
+		
+		let favColors=[
+			{ 
+				name: "Aliya",
+				color: "black"
+
+			},
+			{
+				name: "Richard",
+				color: "green"
+			}
+		];
+		//Form
+		const colorList= document.querySelector("#colorList");
+		const nameInput= document.querySelector("#nameInput");
+		const colorInput= document.querySelector("#colorInput");
+		const createButton= document.querySelector("#createButton");
+
+		let addNewColor= ()=>{
+			createFavColor(nameInput.value, colorInput.value);	
+		}
+
+		createButton.addEventListener("click", addNewColor)
+
+
+		let createFavColor=(person, favColor)=> {
+			const listItem= document.createElement("li");
+			listItem.innerHTML= `Hello ${person}. Yeet ${favColor}.`;
+			colorList.appendChild(listItem);
+		}
+		for(let x=0; x < favColors.length; x++)
+				{ 
+					createFavColor(favColors[x].name, favColors[x].color);
+					const listItem= document.createElement("li");
+					
+				};
+		//createFavColor("Aliya", "black");
+		//createFavColor("Albert", "white");
+		//createFavColor("Bicthe", "orange");
+
+		
+		
+	</script>
+</body>
+</html>
