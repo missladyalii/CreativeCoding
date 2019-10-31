@@ -35,12 +35,14 @@
 
 		createButton.addEventListener("click", addNewColor)
 
-
+		// logic for new bullets
 		let createFavColor=(person, favColor)=> {
 			const listItem= document.createElement("li");
 			listItem.innerHTML= `Hello ${person}. Yeet ${favColor}.`;
 			colorList.appendChild(listItem);
 		}
+
+		// loop through incoming data array and add
 		for(let x=0; x < favColors.length; x++)
 				{ 
 					createFavColor(favColors[x].name, favColors[x].color);
@@ -51,8 +53,11 @@
 		//createFavColor("Albert", "white");
 		//createFavColor("Bicthe", "orange");
 
+		//Audio
+
 		
 		
 	</script>
+	<video id= "videoPlayer" width= "500" controls=""></video>
 </body>
 </html>

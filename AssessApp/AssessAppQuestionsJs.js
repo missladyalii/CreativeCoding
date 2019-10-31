@@ -36,6 +36,7 @@ var activeQ = [
 	}
 ];
 let currentQuestion= 1;
+let currentQuestionData= activeQ[currentQuestion-1]
 /*var topics =	 {
 	SentenceContext: {
 		totalMastered: 20,
