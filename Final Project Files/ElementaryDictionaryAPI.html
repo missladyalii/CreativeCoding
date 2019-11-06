@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WordsAPI</title>
+</head>
+<body>
+	<div id= "Dictionary">
+		<h1>Dictionary</h1>
+		<input type="text" name="WordSrch"/>
+		<div id="definition"></div>
+		
+	<script type="text/javascript">
+		let wordList=["marry", "wicker", "edge", "pardon"]
+		
+		for (var i = 0; i <wordList.length; i++) {
+			let word= wordList[i];
+			let url= `https://wordsapiv1.p.rapidapi.com/words/${word}/definitions`;
+			fetch(url,{
+				method: 'GET',
+				headers:{
+					"x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
+					"x-rapidapi-key": "6aa5316395msh17a91652806383cp157156jsnab22f176c843"
+				},
+			})
+			.then(response => {
+			document.querySelector("#definition").append(response);
+			console.log(response);
+
+			})
+			.catch(err => {
+			console.log(err);
+			});
+		}
+			
+	</script>
+	</div>
+</body>
+</html>
