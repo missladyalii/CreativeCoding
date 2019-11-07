@@ -8,12 +8,18 @@
 		<h1>Dictionary</h1>
 		<input type="text" id="WordSrch"/>
 		<button id="searchBtn">Search</button>
+		<div>
+			<h2 id="headwrd"></h2>
+			<ul id="def"></ul>
+		</div>
 	<script type="text/javascript">
 		//let wordList=['I', 'can','read','this', 'list'];
-		//Take the word input from <input> and take button from <button>
+		//Take the word input from <input> and take button from <button>, refer to other
 		let wrdInput=document.querySelector("#WordSrch");
 		let searchBtn= document.querySelector("#searchBtn");
-		//Dictionary API function
+		let headwrdPlace= document.querySelector("#headwrd");
+		
+		//Dictionary API function call
 		var dictSearch= (word)=>{
 			//let word= wordList[i];
 			let url= `https://wordsapiv1.p.rapidapi.com/words/${word}/definitions`;
@@ -41,8 +47,14 @@
 
 		//making the search button work
 		let newSearch=()=>{ 
-			dictSearch(wrdInput.value)};
-		searchBtn.addEventListener("click",newSearch );
+			dictSearch(wrdInput.value);
+			headwrdPlace.innerHTML=`${wrdInput.value}`;
+			/*for (var i= 0, ){
+				const = document.createElement("li");
+			}*/
+		};
+		searchBtn.addEventListener("click",newSearch);
+		
 	</script>
 	</div>
 </body>
