@@ -6,14 +6,16 @@
 <body>
 	<div id= "Dictionary">
 		<h1>Dictionary</h1>
-		<input type="text" name="WordSrch"/>
-		<div id="definition"></div>
-		
+		<input type="text" id="WordSrch"/>
+		<button id="searchBtn">Search</button>
 	<script type="text/javascript">
-		let wordList=["marry", "wicker", "edge", "pardon"]
-		
-		for (var i = 0; i <wordList.length; i++) {
-			let word= wordList[i];
+		//let wordList=['I', 'can','read','this', 'list'];
+		//Take the word input from <input> and take button from <button>
+		let wrdInput=document.querySelector("#WordSrch");
+		let searchBtn= document.querySelector("#searchBtn");
+		//Dictionary API function
+		var dictSearch (word)=>{
+			//let word= wordList[i];
 			let url= `https://wordsapiv1.p.rapidapi.com/words/${word}/definitions`;
 			fetch(url,{
 				method: 'GET',
@@ -22,16 +24,25 @@
 					"x-rapidapi-key": "6aa5316395msh17a91652806383cp157156jsnab22f176c843"
 				},
 			})
+			//Lets me know that the transmission was successful
 			.then(response => {
-			document.querySelector("#definition").append(response);
-			console.log(response);
-
+				console.log(response);
+				return response.json();
 			})
+			//Where data arrives
+			.then (data => {
+				console.log(data);
+			})
+			//Error catch?
 			.catch(err => {
-			console.log(err);
+				console.log(err);
 			});
 		}
-			
+
+		//making the search button work
+		let newSearch=()=>{ 
+			dictSearch(wrdInput.value)};
+		searchBtn.addEventListener("click",newSearch );
 	</script>
 	</div>
 </body>
